@@ -24,7 +24,8 @@ body
 	font-weight: 300
 
 .wrapper
-	height: 100vh
+	height: auto
+	min-height: 100vh
 	font-family: 'Roboto', sans-serif
 	background-size: cover
 	background-position: center
@@ -67,6 +68,8 @@ body
 		+translate(-50%,0)
 		font-size: 2em
 		@media #{$small-only}
+			position: relative
 			width: 100%
 			font-size: 1.5em
 			text-align: center
+			margin-top: 50px
