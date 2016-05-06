@@ -22,18 +22,25 @@ body
 .regular
 	font-size: 1.25em
 	font-weight: 300
+sup
+	font-size: 60%
+	top: -0.4em
 
 .wrapper
 	height: 100vh
+	position: relative
 	font-family: 'Roboto', sans-serif
 	background-size: cover
 	background-position: center
 	width: 100%
 	color: #fff
+	@media only screen and (max-width: 640px) and (orientation: landscape)
+		min-height: 600px
 	.description-text
 		padding: 50px
 		font-size: 1.25em
 		font-weight: 300
+		position: absolute
 		@media #{$small-only}
 			padding: 20px
 			text-align: center
@@ -46,6 +53,7 @@ body
 		margin: 0 auto
 		position: relative
 		right: 15px
+		margin-top: 20vh
 		@media #{$small-only}
 			height: 100px
 			width: 200px
@@ -62,11 +70,15 @@ body
 			font-weight: 500
 	.subtitle
 		position: absolute
-		top: 80%
+		bottom: 10%
 		left: 50%
 		+translate(-50%,0)
 		font-size: 2em
+		width: 80%
+		text-align: center
 		@media #{$small-only}
 			width: 100%
 			font-size: 1.5em
 			text-align: center
+		// @media only screen and (max-width: 320px)
+		// 	bottom: 10%
