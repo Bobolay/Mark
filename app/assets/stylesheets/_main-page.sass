@@ -27,8 +27,10 @@ sup
 	top: -0.4em
 
 .wrapper
-	height: 100vh
 	position: relative
+
+	height: auto
+	min-height: 100vh
 	font-family: 'Roboto', sans-serif
 	background-size: cover
 	background-position: center
@@ -77,8 +79,7 @@ sup
 		width: 80%
 		text-align: center
 		@media #{$small-only}
+			position: relative
 			width: 100%
 			font-size: 1.5em
 			text-align: center
-		// @media only screen and (max-width: 320px)
-		// 	bottom: 10%
